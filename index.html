@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickman Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        
+        #game-container {
+            position: relative;
+        }
+        
+        #game-canvas {
+            border: 2px solid #333;
+            background-color: #fff;
+        }
+        
+        #controls {
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        #instructions {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas" width="800" height="400"></canvas>
+        <div id="controls">
+            <p>Use arrow keys to move: ← → and ↑ to jump</p>
+        </div>
+        <div id="instructions">
+            <p>Avoid obstacles and reach the end of each level!</p>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
